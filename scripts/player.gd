@@ -12,16 +12,16 @@ func _ready():
 	
 func _process(delta):
 	var current_animation = animator.current_animation
-	print("velocity.y:", velocity.y)
-	print("current_animation:", current_animation)
+	#print("velocity.y:", velocity.y)
+	#print("current_animation:", current_animation)
 	if velocity.y > 0:
 		if animator.current_animation != "fall":
 			animator.play("fall")
-			print("anim fall")
+			#print("anim fall")
 	elif velocity.y < 0:
 		if animator.current_animation != "jump":
 			animator.play("jump")
-			print("anim jump")
+			#print("anim jump")
 
 func _physics_process(delta):
 	# Gravedad
