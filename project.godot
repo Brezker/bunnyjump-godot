@@ -57,6 +57,7 @@ pointing/android/enable_long_press_as_right_click=true
 
 2d_physics/layer_1="player"
 2d_physics/layer_2="platform"
+2d_physics/layer_3="destroyer"
 
 [rendering]
 

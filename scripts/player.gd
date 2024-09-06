@@ -10,7 +10,7 @@ var viewport_size
 func _ready():
 	viewport_size = get_viewport_rect().size
 	
-func _process(delta):
+func _process(_delta):
 	var current_animation = animator.current_animation
 	#print("velocity.y:", velocity.y)
 	#print("current_animation:", current_animation)
@@ -23,7 +23,7 @@ func _process(delta):
 			animator.play("jump")
 			#print("anim jump")
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Gravedad
 	velocity.y += gravity
 	if velocity.y > max_full_velocity:
